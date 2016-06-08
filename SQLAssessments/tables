@@ -1,0 +1,18 @@
+
+/*Creating Customers table*/
+create table Customers(Address CHAR(50), City text, CompnayName text, CountryOrRegion text, CustomerID INTEGER PRIMARY KEY not null, Department text, EmailAddress char(10));
+
+/*Creating Invoices table*/
+create table Invoices(CustomerID INTEGER not null, DeliveryID INTEGER not null, EmployeeID TEXT not null, InvoiceID INTEGER PRIMARY KEY  not null, InvoiceDate TEXT not null)
+
+/*Creating InvoiceDetails table*/
+create table InvoiceDetails(InvoiceID INTEGER NOT NULL, Discount REAL not null, InvoiceDetailID INTEGER PRIMARY KEY NOT NULL, OrderID INTEGER NOT NULL, PaymentTerms TEXT, ProductID INTEGER NOT NULL, Quantity INTEGER NOT NULL, UnitPrice REAL NOT NULL)
+
+/*Creating Orders table*/
+create table Orders(CustomerID INTEGER NOT NULL, EmployeeID TEXT NOT NULL, OrderID INTEGER PRIMARY KEY NOT NULL, OrderDate TEXT NOT NULL)
+
+/*Creating Deliveries table*/
+create table Deliveries(ArrivalDate TEXT NOT NULL, ArrivalTime TEXT NOT NULL, CurrentLocation TEXT NOT NULL, CustomerID INTEGER NOT NULL, DeliveryID INTEGER PRIMARY KEY NOT NULL, DestinationAddress TEXT NOT NULL, DestinationCity TEXT NOT NULL, CountryOrRegion TEXT NULL NULL)
+
+/*Creating Deliveries table*/
+create table Employees(Address TEXT NOT NULL, BillingRate REAL NOT NULL, City TEXT NOT NULL, CountryOrRegion TEXT NOT NULL, EmployeeID TEXT NOT NULL, EmployeeNumber INTEGER NOT NULL)

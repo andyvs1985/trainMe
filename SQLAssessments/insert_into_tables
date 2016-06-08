@@ -1,0 +1,23 @@
+/*Inserting values into Customers Table*/
+insert into Customers (Address, City, CompnayName, CountryOrRegion, CustomerID, Department, EmailAddress, CustomerName)
+    values ('50ft Road', 'Srinagar', 'Zeo', 'India', 1, 'TEC', 'mail@mail.com', 'Raj&Kundra')
+
+/*Inserting values into Invoices Table*/
+insert into Invoices (CustomerID, DeliveryID, EmployeeID, InvoiceID, InvoiceDate)
+    values(1,12,'emp23', 3, '2016-03-21 04:24:13.11')
+
+/*Inserting values into InvoiceDetails Table*/
+insert into InvoiceDetails (InvoiceID, Discount, InvoiceDetailID, OrderID, PaymentTerms, ProductID, Quantity, UnitPrice) 
+    values (1, 14.50, 1, 2, '30 days', 4, 20, 2)
+
+/*Inserting values into Orders Table*/
+insert into Orders(CustomerID, EmployeeID, OrderID, OrderDate) 
+    values(2, 'emp23', 2, '2016-03-21 04:24:13.11')
+
+/*Inserting values into Deliveries Table*/
+insert into Deliveries(ArrivalDate, ArrivalTime, CurrentLocation, CustomerID, DeliveryID, DestinationAddress, DestinationCity)
+    values('2016-02-13', '04:24:13.11', 'BTM', 2, 244, '60ft Road', 'Bangalore')
+
+/*Inserting values into Employees Table*/
+insert into Employees(Address, BillingRate, City, CountryOrRegion, EmployeeID, EmployeeNumber)
+    values('1st main', 34.5, Bangalore', 'India', emp23, 123)
