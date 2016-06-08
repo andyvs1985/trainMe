@@ -1,0 +1,54 @@
+
+            body, div, h1, h2, h3, h4, h5, h6, p, ul, img {margin:0px; padding:0px; }
+            
+            .container {
+                width: 800px;
+                margin: 0 auto; 
+                }
+
+            url (images/header_slice.jpg)
+
+            #main {
+                background: url(images/header_slice.jpg) repeat-x; 
+                }
+
+            #main .container {
+                background: url(images/header.jpg) no-repeat; 
+                }
+
+            #logo {
+                background: url(images/logo.png) no-repeat;
+                height: 84px;
+                width: 235px;
+                float: left; 
+                }
+
+            #header {
+                padding-top: 40px; 
+            }
+
+            #tagline {
+                float: left; 
+            }
+            
+            #tagline h3 {font-size: 30px; color: #e4dfdf; }
+
+            #tagline {
+                float: left;
+                padding-top: 20px;
+                padding-left: 20px; 
+            }
+            
+            ul#menu {
+                list-style: none; 
+            }
+ 
+            ul#menu li a {
+                font-size: 30px;
+                color: #676666;
+                text-decoration: none; 
+            }
+
+            ul#menu li {
+                float: left; 
+            }
