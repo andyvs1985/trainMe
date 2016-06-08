@@ -1,0 +1,23 @@
+body {
+    /*padding: 120px;*/
+    background-image: url("/vanand/MyPIPassessments/image/wood.jpg");
+}
+
+#usrDetails, #usrHobbies, #aboutU {
+   /*background-color: darkslategrey;*/
+    border: 1px solid maroon;
+    border-radius: 5px;
+    border-style: inset;
+    width: 650px;
+    padding: 10px;
+}
+label{
+    color: white;
+}
+img{
+    width: 150px;
+    height: 50px;
+}
+span{
+    color: blue;
+}
