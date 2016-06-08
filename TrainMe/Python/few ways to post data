@@ -1,0 +1,19 @@
+Server side postback
+
+Few ways
+
+1) Have a POST form on your page and save your serialized object inside a hidden input then post it to the other page. You will be able to process that data on the server and most likely put it back somehow into the page. Either as javascript object or anything else.
+
+2) Client side URL examination
+   Make a GET request to your other page by attaching your serialized object to URL as:
+   http://www.app.com/otherpage.xyz?MyObject=SerializedData
+   That other page can then easily parse its URL and deserialize data using Javascript.
+   What's in a window.name = local cross-page session
+
+3) This is a special technique that's also used in a special javascript library that exposes window.name as a dictionary, so you can save many different objects into it and use it as local cross-page-session. It has some size limitations that may affect you, but check the linked page for that and test your browsers.
+
+4) HTML5 local storage
+   HTML5 has the ability of local storage that you can use exactly for these purposes. But using it heavily depends on your browser requirements. Modern browsers support it though and data can be restored even after restarting browsers or computers...
+
+5) Cookies
+   You can always use cookies but you may run into their limitations. These days cookies are not the best choice even though they have the ability to preserve data even longer than current window session.

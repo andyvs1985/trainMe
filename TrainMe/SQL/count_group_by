@@ -1,0 +1,7 @@
+
+
+SELECT country, COUNT(*)
+    FROM bridges GROUP BY country;
+  
+SELECT country, SUM(length)
+    FROM bridges GROUP BY country;

@@ -1,0 +1,78 @@
+Inserting Values into groceries :
+---------------------------------
+INSERT INTO groceries VALUES(1,"Bananas", 4, 20);
+
+INSERT INTO groceries VALUES(2,"Apples", 5, 120);
+
+INSERT INTO groceries VALUES(3,"Mangos", 15, 220);
+
+INSERT INTO groceries VALUES(4,"Oranges", 3, 70);
+
+INSERT INTO groceries VALUES(5,"Pinaple", 1, 20);
+
+
+Inserting values into Customer Table:
+--------------------------------------
+INSERT INTO customers VALUES (1, "Anand", 33, 56);
+INSERT INTO customers VALUES (2, "Raj", 63, 53);
+INSERT INTO customers VALUES (3, "Ram", 14,33);
+INSERT INTO customers VALUES (4, "Guru", 45, 76);
+INSERT INTO customers VALUES (5, "Sham", 43, 99);
+
+
+Inserting values into fruits table:
+------------------------------------
+INSERT INTO fruits VALUES (1, "Cactus Pear", 1, "winter");
+INSERT INTO fruits VALUES (2, "Passion Fruit", 3, "winter");
+INSERT INTO fruits VALUES (3, "Apricot", 2, "spring");
+INSERT INTO fruits VALUES (4, "Lychee", 2, "spring");
+INSERT INTO fruits VALUES (5, "Guava", 2, "fall");
+INSERT INTO fruits VALUES (6, "Pineapple", 4, "fall");
+INSERT INTO fruits VALUES (7, "Fig", 1, "summer");
+INSERT INTO fruits VALUES (8, "Durian", 10, "summer");
+
+Inserting into teachers table:
+-------------------------------
+INSERT INTO teachers (name, email)
+    VALUES ("Socrates", "soc@rat.es");
+INSERT INTO teachers (name, email)
+    VALUES ("Maria Montessori", "maria@montessori.com");
+
+Inserting into students table:
+-------------------------------
+INSERT INTO students (name, email, teacher_id)
+    VALUES ("Antisthenes", "jr@winston.com", 1);
+INSERT INTO students (name, email, teacher_id)
+    VALUES ("Xenophon", "xenophon@greece.com", 1);
+INSERT INTO students (name, email, teacher_id)
+    VALUES ("Plato", "plato@greece.com", 1);
+INSERT INTO students (name, email, teacher_id)
+    VALUES ("Larry", "larry@page.com", 2);
+INSERT INTO students (name, email, teacher_id)
+    VALUES ("Sergey", "larry@page.com", 2);
+INSERT INTO students (name, email, teacher_id)
+    VALUES ("Ray", "ray@bradbury.com", NULL);
+
+
+Inserting into bridge table:
+----------------------------
+INSERT INTO bridges (name, length, country) VALUES
+    ("Danyang–Kunshan Grand Bridge", 164800, "China");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Tianjin Grand Bridge", 113700, "China");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Weinan Weihe Grand Bridge", 79732, "China");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Bang Na Expressway", 54000, "Thailand");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Beijing Grand Bridge", 48153, "China");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Lake Pontchartrain Causeway", 38422, "United States");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Manchac Swamp bridge", 36710, "United States");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Yangcun Bridge", 35812, "China");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Hangzhou Bay Bridge", 35673, "China");
+INSERT INTO bridges (name, length, country) VALUES
+    ("Runyang Bridge", 35660, "China");

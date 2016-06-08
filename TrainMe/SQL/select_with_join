@@ -1,0 +1,15 @@
+/* Show students next to their teachers */
+select stud.name, 
+       teach.name
+from students stud
+	join teachers teach 
+	on stud.teacher_id = teach.id
+
+/* Show students next to their teachers,
+   even if they don't have a teacher assigned
+*/ 
+select stud.name,
+       teach.name
+from students stud
+	left outer join teachers teach
+	on stud.teacher_id = teach.id

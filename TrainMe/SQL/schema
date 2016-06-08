@@ -1,0 +1,38 @@
+Creating groceries table:
+-------------------------
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER);
+
+Creating customers table:
+-------------------------
+CREATE TABLE customers (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, weight REAL);
+
+Creating fruits table:
+----------------------
+CREATE TABLE fruits (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    price INTEGER,
+    season TEXT);
+
+Creating students table:
+------------------------
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    teacher_id INTEGER);
+    
+Creating teachers table:
+------------------------
+CREATE TABLE teachers (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    email TEXT);
+
+Creating bridges talbe:
+-----------------------
+CREATE TABLE bridges (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    length INTEGER, /* meters */
+    country TEXT);
